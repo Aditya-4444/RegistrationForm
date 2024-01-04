@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.icon img{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+form {
+    background-color: #ffffff65;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25rem;
+    height: 600px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #00000065;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+    transition: transform 0.5s ease-in-out;
+}
+input:hover{
+    transform: scale(1.05);
+}
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input:invalid {
+    border-color: #ff6347;
+}
+
+.error-message {
+    color: rgba(195, 1, 1, 0.685);
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.submitted-message{
+    background-color: rgba(255, 255, 255, 0.289);
+    border-radius: 10px;
+    padding: 25px 100px;
+    font-size: larger;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.submitted-message img{
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .icon{
+        padding: 0;
+    }
+    .icon img {
+        width: 25vw;
+        height: 25vw;
+        border-radius: 100px;
+    }
+
+    form {
+        width: 70vw; /* Full width on small screens */
+        height: 88vh;
+    }
+}
